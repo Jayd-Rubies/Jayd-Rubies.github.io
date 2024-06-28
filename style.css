@@ -1,9 +1,25 @@
-h1 {color:#c8a2c8; font-size:50px; font-family: Comfortaa, sans-serif; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: #c6a0c6;}
-h2 {color:yellow; font-size: 20px;-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #d0d000;}
-h3 {color:#c8a2c8;-webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: #c6a0c6;}
-a {color:#c8a2c8;-webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: #c6a0c6;}
-p {color:white;-webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: #f0f0f0;}
-p2 {color:white;-webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: #f0f0f0;}
+h1 {color:#c8a2c8; font-size:50px; font-family: Comfortaa, sans-serif;}
+h2 {color:yellow; font-size: 20px;}
+h3 {color:#c8a2c8;}
+a {color:#c8a2c8;}
+p {color:white;}
+p2 {color:white;}
 body {
-    font-family: 'Comfortaa';font-size: 20px;
+    font-family: 'Comfortaa';font-size: 30px;
+}
+.Div_center {
+border: 5px outset #c8a2c8;
+background-color: black;
+text-align: center;
+position: relative;
+left: 100px;
+width: 1000px;
+}
+.Div_main {
+border: 5px outset #c8a2c8;
+background-color: black;
+text-align: center;
+position: relative;
+width: 1200px;
+left: 75px;
 }
