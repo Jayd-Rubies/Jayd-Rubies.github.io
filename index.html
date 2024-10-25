@@ -75,13 +75,19 @@
         <br>
     </div>
     <br>
-    <div class="Div_utterances">
+    <div class="Div_utterances" id="help">
     <script src="https://utteranc.es/client.js"
         repo="Jayd-Rubies/Jayd-Rubies.github.io"
         issue-term="pathname"
         theme="gruvbox-dark"
         crossorigin="anonymous"
         async>
+    </script>
+    <script>
+        window.setInterval(function() {
+          var elem = document.getElementById('help');
+              elem.scrollTop = elem.scrollHeight;
+        }, 5000);
     </script>
     </div>
     <br>
