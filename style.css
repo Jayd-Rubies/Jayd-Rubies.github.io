@@ -8,7 +8,7 @@ p3 {color:#c8a2c8; font-size:20px;}
 body {
     font-family: 'Comfortaa';font-size: 30px;
 }
-Div_center {
+.Div_center {
 border: 5px outset #c8a2c8;
 background-color: black;
 text-align: center;
@@ -16,7 +16,7 @@ position: relative;
 width: 1000px;
 margin: auto;
 }
-Div_utterances {
+.Div_utterances {
 border: 5px outset #c8a2c8;
 background-color: black;
 text-align: center;
@@ -26,27 +26,27 @@ height: 700px;
 margin: auto;
 overflow: scroll;
 }
-Div_main {
+.Div_main {
 border: 5px outset #c8a2c8;
 background-color: black;
-                text-align: center;
-                position: relative;
-                width: 1200px;
-                margin: auto;
-                }
-                Div_BTN {
-                border: 5px outset #c8a2c8;
-                background-color: black;
-                text-align: center;
-                position: relative;
-                width: 1000px;
-                margin: auto;
-                }
-                Div_BAR {
-                border: 5px outset #c8a2c8;
-                background-color: black;
-                text-align: center;
-                position: relative;
+text-align: center;
+position: relative;
+width: 1200px;
+margin: auto;
+}
+.Div_BTN {
+border: 5px outset #c8a2c8;
+background-color: black;
+text-align: center;
+position: relative;
+width: 1000px;
+margin: auto;
+}
+.Div_BAR {
+border: 5px outset #c8a2c8;
+background-color: black;
+text-align: center;
+position: relative;
 width: 1100px;
 height: 50px;
 margin: auto;
