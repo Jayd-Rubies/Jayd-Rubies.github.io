@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="style.css">
-        <title>Jaydsite - Version 1.2.0</title>
+        <title>Jaydsite - Version 1.3.0</title>
         <meta name="description" content="Just a personal project.">
         <meta name="author" content="Jayd">
         <meta name="copyright" content="Jayd">
@@ -11,7 +11,7 @@
         <style>
             .Div_center {
                 border: 5px outset #c8a2c8;
-                background-color: black;
+                background-color: #00000080;
                 text-align: center;
                 position: relative;
                 width: 1000px;
@@ -56,13 +56,45 @@
     </head>
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 <body style="background-color:#808080;">
-<div class="Div_main" style='background-image: url("https://images7.alphacoders.com/135/thumb-1920-1350954.png"); background-size: cover;'>
+<div class="Div_main" style='background-image: url("https://images7.alphacoders.com/135/thumb-1920-1350954.png"); background-size: auto; background-repeat: no-repeat;'>
     <br>
+
+
+
     <div class="Div_BAR">
     <b><p3><a href="https://jayd-rubies.github.io/blog.html"> |-Blog-| </a></p3></b> <b><p3><a href="https://jayd-rubies.github.io/others.html"> |-Others-| </a></p3></b> <b><p3><a href="https://jayd-rubies.github.io/bsky.html"> |-Important Posts-| </a></p3></b>
     </div>
+
+
+
    <h1>Jaydsite</h1>
-    <h2> V1.2.0</h1>
+    <h2> V1.3.0</h1>
+
+
+
+    <div class="Div_BAR">
+        <button class="tabs" onclick="changePage(about,social,more)">About</button>
+        <button class="tabs" onclick="changePage(social,more,about)">Social</button>
+        <button class="tabs"onclick="changePage(more,about,social)">More</button>
+    </div>
+    <br>
+
+
+    <div id="about">
+    <div class="Div_center">
+        <h3>About me!</h3>
+    </div>
+    <br>
+    <div class="Div_center">
+        <p2><br>Hello! I go by the online handle of Jayd, I am a decently experience developer specializing in frontend. Javascript is my main language, and I use HTML to makes web pages.
+        <br>
+    </p2>
+    </div>
+    </div>
+
+
+
+    <div id="social">
     <div class="Div_BTN">
         <b><h3>My Socials</h3></b>
         <b><p3><a href="https://jayd-rubies.bsky.social">Bluesky</a></p3></b>
@@ -74,8 +106,12 @@
         <a href="https://jayd-rubies.github.io"><img src="https://jayd-rubies.github.io/image/button.png" alt="Jaydsite"></a>
         <br>
     </div>
+    </div>
     <br>
-    <div class="Div_utterances" id="help">
+
+
+
+    <div class="Div_utterances" id="more">
     <script src="https://utteranc.es/client.js"
         repo="Jayd-Rubies/Jayd-Rubies.github.io"
         issue-term="pathname"
@@ -83,14 +119,30 @@
         crossorigin="anonymous"
         async>
     </script>
-    <script>
-        window.setTimeout(function() {
-        var elem = document.getElementById('help');
-        elem.scrollTop = elem.scrollHeight;
-        }, 2000);
-    </script>
     </div>
     <br>
+
+
+
+    <script>
+        window.setTimeout(function() {
+        var elem = document.getElementById('more');
+        elem.scrollTop = elem.scrollHeight;
+        }, 2000);
+        var social = document.getElementById("social");
+        var about = document.getElementById("about")
+        social.style.display = "none";
+        more.style.display = "none";
+        function changePage(dest, sec1, sec2){
+            sec1.style.display = "none"
+            sec2.style.display = "none"
+            dest.style.display = "block"
+
+        }
+    </script>
+
+
+
 </div>
 </div>
 </body>
