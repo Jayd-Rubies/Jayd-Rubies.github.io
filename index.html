@@ -75,7 +75,7 @@
     <div class="Div_BAR">
         <button class="tabs" onclick="changePage(about,social,more)">About</button>
         <button class="tabs" onclick="changePage(social,more,about)">Social</button>
-        <button class="tabs"onclick="changePage(more,about,social)">More</button>
+        <button class="tabs"onclick="changePage(more,about,social),scrolldown()">More</button>
     </div>
     <br>
 
@@ -126,20 +126,21 @@
 
     <script>
         function scrolldown(){
-        window.setTimeout(function() {
-        var elem = document.getElementById('more');
-        elem.scrollTop = elem.scrollHeight;
-        }, 2000);
+            window.setTimeout(function() {
+                var elem = document.getElementById('more');
+                elem.scrollTop = elem.scrollHeight;
+            }, 2000);
+        }
         var social = document.getElementById("social");
         var about = document.getElementById("about")
+        var elem = document.getElementById('more');
         social.style.display = "none";
-        more.style.display = "none";
+        elem.style.display = "none";
         function changePage(dest, sec1, sec2){
             sec1.style.display = "none"
             sec2.style.display = "none"
             dest.style.display = "block"
 
-        }
         }
     </script>
 
