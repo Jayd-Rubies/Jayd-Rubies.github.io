@@ -75,7 +75,7 @@
     <div class="Div_BAR">
         <button class="tabs" onclick="changePage(about,social,more)">About</button>
         <button class="tabs" onclick="changePage(social,more,about)">Social</button>
-        <button class="tabs"onclick="changePage(more,about,social)">More</button>
+        <button class="tabs"onclick="changePage(more,about,social), scrollDown()">More</button>
     </div>
     <br>
 
@@ -125,6 +125,7 @@
 
 
     <script>
+        function scrollDown(){
         window.setTimeout(function() {
         var elem = document.getElementById('more');
         elem.scrollTop = elem.scrollHeight;
@@ -138,6 +139,7 @@
             sec2.style.display = "none"
             dest.style.display = "block"
 
+        }
         }
     </script>
 
