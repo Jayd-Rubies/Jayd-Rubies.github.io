@@ -128,6 +128,7 @@ kbd:active {filter: brightness(70%);}
     max-width: 700px;
     max-height: 450px;
     background-color: rgba(255, 192, 203, 0.5)!important;
+    backdrop-filter: blur(10px);
     z-index:99999
 }
 #infoScreen, #modManager, #settingsMenu, .menuScreen {
@@ -135,7 +136,7 @@ kbd:active {filter: brightness(70%);}
     height:calc(100% - 20px);
     width:calc(100% - 20px);
     padding: 10px;
-
+    backdrop-filter: blur(10px);
     background-color: rgba(255, 192, 203, 0.5)!important;
     overflow-x: hidden;
     z-index: 10;
@@ -155,6 +156,7 @@ kbd:active {filter: brightness(70%);}
     max-width: 700px;
     height: 50px;
     background-color: rgb(255, 192, 203, 0.5)!important;
+    backdrop-filter: blur(10px);
     color: white;
     font-size: 1.5em;
     padding: 8px;
@@ -257,6 +259,7 @@ kbd:active {filter: brightness(70%);}
 }
 #saveFile, #loadFile, #saveConfirm, #promptOK, .promptOK, #promptCancel, #promptConfirm {
     background-color: "#ffc0cb80";
+    backdrop-filter: blur(10px);
     text-align: center;
     vertical-align: middle;
     height: 3em;
@@ -309,6 +312,7 @@ button, input[type="submit"], input[type="reset"] {
     text-shadow: 0.5px 1px 4px #000000;
     color: rgba(255, 255, 255, 0.85);
     border: 2px solid #ff00ea80;
+    backdrop-filter: blur(10px);
     margin: 0px 4px 4px 4px;
     font-variant: small-caps;
 }
@@ -435,9 +439,12 @@ button, input[type="submit"], input[type="reset"] {
     width: 5px;
     height: 8px;
     background-color: rgba(255, 192, 203, 0.5);
+    backdrop-filter: blur(10px);
+
 }
 #toolControls::-webkit-scrollbar-thumb, #category-tools::-webkit-scrollbar-thumb, #categoryControls::-webkit-scrollbar-thumb, #elementControls::-webkit-scrollbar-thumb {
     background-color: rgba(255, 192, 203, 0.5);
+    backdrop-filter: blur(10px);
     border-radius: 5px;
 }
 #toolControls::-webkit-scrollbar-track, #category-tools::-webkit-scrollbar-track, #categoryControls::-webkit-scrollbar-track, #elementControls::-webkit-scrollbar-track {
@@ -446,6 +453,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 #toolControls::-webkit-scrollbar-thumb:hover, #category-tools::-webkit-scrollbar-thumb:hover, #categoryControls::-webkit-scrollbar-thumb:hover, #elementControls::-webkit-scrollbar-thumb:hover {
     background-color: rgba(255, 192, 203, 0.5);
+    backdrop-filter: blur(10px);
 }
 
 #toolControls {
@@ -458,6 +466,7 @@ button, input[type="submit"], input[type="reset"] {
 #categoryControls {
     margin-bottom: 5px;
     background-color: rgba(255, 192, 203, 0.5);
+    backdrop-filter: blur(10px);
     white-space: nowrap;
     overflow-x: auto;
     flex-wrap: wrap;
@@ -485,6 +494,7 @@ button, input[type="submit"], input[type="reset"] {
     z-index:0;
     flex-grow: 1;
     border-bottom: 2px solid rgba(255, 192, 203, 0.5);
+    backdrop-filter: blur(10px);
     background-color: #ffc0cb80;
 }
 #categoryControls button:not(:last-child) {
@@ -493,6 +503,7 @@ button, input[type="submit"], input[type="reset"] {
 #categoryControls button[current="true"] {
     border: none;
     background-color: rgba(255, 192, 203, 0.5);
+    backdrop-filter: blur(10px);
 }
 .category {
     margin-top:0.25em;
@@ -588,6 +599,7 @@ button, input { /*Disable double tap zoom on mobile devices*/
 }
 .settingsButton, select, .toggleInput, #settingsMenu input[type="number"], #settingsMenu input[type="text"], #savePromptMenu input, input[type="email"], input[type="number"] {
     background-color: #ffc0cb80;
+    backdrop-filter: blur(10px);
     vertical-align: middle;
     margin-left: 4px;
     margin-right: 4px;
@@ -641,6 +653,7 @@ button, input { /*Disable double tap zoom on mobile devices*/
 }
 .categoryButton.notify {
     background-color: rgba(255, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
 }
 /* .elementButton.notify with a red glow */
 .elementButton.notify {
