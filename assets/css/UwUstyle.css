@@ -10,7 +10,7 @@ html, body {
 }
 @font-face {
     font-family: 'VT323';
-    src: url('https://Jayd-Rubies.github.io/fonts/VT323-Regular.ttf');
+    src: url('https://jayd-Rubies.github.io/fonts/VT323-Regular.ttf');
 }
 body {
     font-family: 'Press Start 2P', 'VT323', Arial;
@@ -181,10 +181,10 @@ kbd:active {filter: brightness(70%);}
     right: 0px;
     top: 0px;
     font-size: 2em;
-    background-color: rgb(100, 33, 33);
+    background-color: rgb(255, 0, 0);
     padding:5px;
     text-align:center;
-    border: 4px solid #9d9d9d;
+    border: 4px solid #ffc0cb;
     border-top: none;
     border-right: none;
     z-index: 12;
